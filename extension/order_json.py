@@ -31,6 +31,7 @@ def process_files_current_path():
       if extension.replace('.', '') == 'json':
         count+=1
         process_file(file)
+  print_result(count)
 
 def process_args_files(files):
   count = 0
