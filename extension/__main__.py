@@ -1,13 +1,13 @@
 
-from extension.order_json import start
+from extension.order_json import OrderJson
 import sys
 
 def main():
   args = sys.argv[1::]
   if len(args) > 0:
-    start(args)
+    OrderJson(args).start()
   else:
-    start()
+    OrderJson().start()
 
 if __name__ == '__main__':
   main()
